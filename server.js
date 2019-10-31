@@ -4,10 +4,6 @@ const postsRoute = require('./posts/postRouter');
 
 const server = express();
 
-server.listen(4000, () => {
-  console.log("Listening on port 4000")
-})
-
 server.use('/users', logger, userRoute);
 server.use('/posts', logger, postsRoute);
 
